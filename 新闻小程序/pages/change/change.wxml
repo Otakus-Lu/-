@@ -1,0 +1,9 @@
+<form catchsubmit="formSubmit" catchreset="formReset">
+  <text>姓名</text>
+  <input value="{{user.name}}" name="name"></input>
+  <text>年龄</text>
+  <input value="{{user.age}}"  name="age"></input>
+  <text>电话</text>
+  <input value="{{user.phone}}"  name="phone"></input>
+  <button type="primary" formType="submit">提交修改</button>
+</form>

@@ -1,0 +1,31 @@
+<view class="header" wx:if="{{userInfo&&userInfo.avatarUrl}}" bindtap='change'>
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+	<text class="tuichu" catchtap="tuichu">退出登录</text>
+</view>
+<!--如果用户没有授权，显示登陆按钮  -->
+<view wx:if="{{!(userInfo&&userInfo.avatarUrl)}}" class="btn-login">
+	<button open-type="getUserInfo" lang="zh_CN" type="primary" bindgetuserinfo="onGotUserInfo">授权登陆</button>
+</view>
+<view class='line_5px' />
+<view wx:if="{{userInfo&&userInfo.avatarUrl}}">
+	<view class='my_item' bindtap="goShouchang">
+		<text>我的收藏</text>
+		<view class='right_arrow' />
+	</view>
+</view>
+<!-- 我的文章 -->
+<view class='my_item' bindtap="gomynews">
+		<text>我的文章</text>
+		<view class='right_arrow' />
+	</view>
+<!-- 联系客服 -->
+<view class='my_item'>
+	<button class="button" open-type="contact">联系客服</button>
+	<view class='right_arrow' />
+</view>
+<!-- 反馈建议 -->
+<view class='my_item'>
+	<button class="button" open-type="feedback">反馈建议</button>
+	<view class='right_arrow' />
+</view>

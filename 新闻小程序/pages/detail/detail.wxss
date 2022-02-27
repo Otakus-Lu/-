@@ -1,0 +1,65 @@
+.title {
+  font-size: 40rpx;
+}
+
+.root2 {
+  display: flex;
+  padding: 5rpx;
+  justify-content: space-between;
+}
+
+.root2-1 {
+  color: gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.root2-2-img {
+  padding: 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+}
+
+
+.img {
+  margin-top: 5rpx;
+  width: 100%;
+}
+.input {
+  border: 1px solid gainsboro;
+  margin-top: 100rpx;
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  height: 10rpx;
+  min-height: 80rpx;
+}
+.fabiao-button{
+  margin: 30rpx;
+}
+.tip {
+  margin-top: 30rpx;
+  font-size: 50rpx;
+  color: goldenrod;
+}
+.user{
+  color:cornflowerblue;
+}
+.pinglunItem {
+  border-bottom: 2px solid gainsboro;
+  margin-left: 50rpx;
+  margin-top: 30rpx;
+}
+.reply-img{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute; 
+  right: 15rpx;
+}
+.reply-tip{
+  position: absolute; 
+  right: 15rpx;
+}
+.content{
+  margin-left: 15rpx;
+}

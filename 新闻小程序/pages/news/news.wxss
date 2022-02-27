@@ -1,0 +1,27 @@
+page {
+  background: gainsboro;
+}
+
+.itemRoot {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.itemImg {
+  width: 100%;
+}
+
+
+
+.itemTitle {
+  font-size: 35rpx;
+}
+
+.itemShoucang {
+  font-size: 30rpx;
+  color: gray;
+  margin: 15rpx;
+}

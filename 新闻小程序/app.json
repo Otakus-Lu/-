@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/news/news",
+    "pages/me/me",
+    "pages/detail/detail",
+    "pages/shoucang/shoucang",
+    "pages/webview/webview",
+    "pages/change/change",
+    "pages/editor/editor",
+    "pages/mynews/mynews",
+    "pages/bianji/bianji"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1E90FF",
+    "navigationBarTitleText": "SC小助手（简陋陋陋版）",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#8a8a8a",
+    "selectedColor": "#ffb965",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/home-no.png",
+      "selectedIconPath": "images/home-yes.png"
+    },{
+    "pagePath": "pages/editor/editor",
+    "text": "创作",
+    "iconPath": "images/edit-no.png",
+    "selectedIconPath": "images/edit-yes.png"
+  } ,{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/me-no.png",
+      "selectedIconPath": "images/me-yes.png"
+    }]
+  },
+  "sitemapLocation": "sitemap.json"
+}

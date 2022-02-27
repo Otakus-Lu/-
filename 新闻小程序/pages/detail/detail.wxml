@@ -1,0 +1,37 @@
+<view>
+  <text class="title">{{detail.title}}</text>
+  <view class="root2">
+    <view class="root2-1">
+      <text>{{time}}</text>
+      <text>作者:{{detail.zuozhe}}</text>
+      <view>
+        <text class="shoucang">{{shouCangNum}}人收藏 </text>
+        <text class="shoucang"> {{liulanNum}}次浏览</text>
+      </view>
+    </view>
+    <image class="root2-2-img" src="{{isShouCang?'../../images/shoucang-ok.png':'../../images/shoucang-no.png'}}"
+      bindtap="shoucang" data-detail="{{detail}}"></image>
+  </view>
+  <image class="img" src="{{detail.img}}" mode="widthFix"></image>
+  <view class="content">
+    <rich-text class="content" nodes="{{detail.content}}"></rich-text>
+  </view>
+</view>
+<!--评论模块-->
+<view class="tip">评论区域</view>
+<view wx:for="{{comment}}" wx:key="_id">
+  <view class="pinglunItem">
+    <text class="user">{{item.zuozhe}}</text>
+    <text>回复</text>
+    <text class="user">{{item.reply}}</text>
+    <text>:</text>
+    <image class="reply-img" src="{{replyUrl}}" bindtap="reply" data-item="{{item}}"></image>
+    <view></view>
+    <text>{{item.content}}</text>
+  </view>
+</view>
+<!--发表评论-->
+<input class="input" bindinput="getContent" placeholder="请输入评论内容" value="{{content}}"></input>
+<button type="primary" bindtap="fabiao" size="mini" class="fabiao-button">发表评论</button>
+<text class="reply-tip">正在回复{{replier}}</text>
+<button type="primary" bindtap="cancel" size="mini" class="fabiao-button">回复作者</button>

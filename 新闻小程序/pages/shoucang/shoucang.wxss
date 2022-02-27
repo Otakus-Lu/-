@@ -1,0 +1,21 @@
+.root {
+  display: flex;
+  border-bottom: 1px gray solid;
+  padding-bottom: 5rpx;
+  padding-top: 15rpx;
+}
+
+.img {
+  flex: 3;
+  height: 70px;
+}
+
+.title {
+  flex: 7;
+}
+
+.tip {
+  text-align: center;
+  color: gray;
+  margin-top: 30px;
+}

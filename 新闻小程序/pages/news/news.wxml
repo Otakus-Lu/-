@@ -1,0 +1,11 @@
+<view wx:for="{{news}}" wx:key="_id">
+  <view class="itemRoot" bindtap="goDetail" data-item="{{item}}">
+    <text class="itemTitle">{{item.title}}</text>
+    <image class="itemImg" src="{{item.img}}" mode="widthFix"></image>
+    <view>
+      <text class="itemShoucang">{{item.shoucang}}人收藏</text>
+      <text class="itemShoucang">{{item.liulan}}次浏览</text>
+    </view>
+  </view>
+</view>
+<view wx:if="{{!news||news.length<1}}" style="text-align:center">暂无数据</view>

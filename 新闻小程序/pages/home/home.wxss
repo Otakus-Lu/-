@@ -1,0 +1,164 @@
+/* pages/shouye/shouye.wxss */
+page {
+  background-color: #fff
+}
+
+/* 轮播图 */
+
+.lunbo1 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10rpx 10rpx 5rpx 10rpx;
+  background-color: white;
+}
+
+.lubo {
+  width: 100%;
+  height: 400rpx;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* 九宫格 */
+.cell_1 {
+  /* 第一行 */
+  color: white;
+  width: 500rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  margin: 20rpx auto;
+  text-align: center;
+  background: #1E90FF;
+}
+
+.cell_2 {
+  /* 第二行 */
+  display: flex;
+  justify-content: space-between;
+}
+
+.cell_2_child {
+  color: white;
+  width: 325rpx;
+  height: 150rpx;
+  line-height: 150rpx;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+.cell_2_1 {
+  margin-top:30rpx;
+  margin-left: 30rpx;
+  background: #40E0D0;
+}
+
+.cell_2_2 {
+  background: #FF8247;
+  height: 310rpx;
+  line-height: 310rpx;
+  margin-top:30rpx;
+  margin-right: 30rpx;
+}
+
+.cell_2_3 {
+  position: absolute;
+  top:600rpx;
+  margin-left: 30rpx;
+  background: #8A2BE2;
+}
+
+.cell_2_4 {
+  background: #FF6A6A;
+}
+.wenzi{
+  padding-bottom: 0;
+}
+.u-wrp-bnr {
+  width: 100%;
+  height: 400rpx;
+  display: block;
+  position: relative;
+  /* top: 100rpx; */
+  background: #f0f0f0;
+  border-radius: 15rpx;
+}
+
+.u-img-slide {
+  width: 100%;
+  height: inherit;
+  border-radius: 15rpx;
+}
+
+/* 列表 */
+
+.body3 {
+  margin-top: 20rpx;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  padding: 30rpx 30rpx 30rpx 30rpx;
+}
+
+.body3_1 {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.body3_1_1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.body3_1_1_1 {
+  color: #1a1a1a;
+  font-size: 26rpx;
+  margin-top: 20rpx;
+}
+/* 列表 */
+page {
+  background: gainsboro;
+}
+
+.itemRoot {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15rpx;
+  margin-bottom: 10rpx;
+}
+
+.itemImg {
+  width: 100%;
+}
+
+
+
+.itemTitle {
+  font-size: 35rpx;
+}
+
+.itemShoucang {
+  font-size: 30rpx;
+  color: gray;
+  margin: 15rpx;
+}
+.news-list{
+  margin-top: 10rpx;
+}
+.xuanfu{
+  position: fixed;
+  bottom: 10rpx;
+  right: 0;
+  width: 10%;
+  height: 8%;
+}
